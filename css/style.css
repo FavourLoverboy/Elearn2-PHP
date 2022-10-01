@@ -1,0 +1,2009 @@
+body{
+    background: #22242a;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container, .container-fluid, .no-p, .row{
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+table tr th, table tr td{
+    color:#ffffff;
+}
+table tr:hover td{
+    background: #F8F9FA;
+    color: #22242A;
+}
+.text{
+    color: #fff;
+}
+.row-box{
+    background: #2C3034;
+    margin-top: 50px;
+    min-height: 50px;
+}
+.main-main-box{
+    background: #22242A;
+    float: right;
+    min-height: 605px;
+    padding: 0px;
+}
+footer{
+    background: #22242A;
+    margin:0px;
+    padding: 0px;
+    margin: 0px;
+    /* margin-bottom: 3px; */
+    margin-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+footer div{
+    background: #2C3034;
+    color:#F8F9FA;
+    margin:0px;
+    padding: 10px;
+    text-align: center;
+}
+/* =============== Laptop View =============== */
+.laptop-view{
+    display:block;
+}
+.mobile-view{
+    display:none;
+}
+.mobile-view-dropdown{
+    display:none;
+}
+.top-nav-left{
+    background: #2C3034;
+    height: 50px;
+    padding: 0;
+}
+.top-nav-left img{
+    display: block;
+    height: 100%;
+    margin: 5px auto;
+    width:163px;
+}
+.top-nav-left .bars{
+    /* background: purple; */
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    margin: 10px auto;
+    width:30px;
+}
+.top-nav-left .bars .fa-bars{
+    color:#fff;
+    font-size: 30px;
+}
+.top-nav-right{
+    background: #2C3034;
+    height: 50px;
+    padding: 0;
+}
+.top-nav-right .top-right-box{
+    /* background: red; */
+    height: 50px;
+    padding: 0;
+}
+.top-nav-right .top-right-box .box{
+    /* background: red; */
+    height: 50px;
+    padding: 0;
+}
+.top-nav-right .top-right-box .box span{
+    /* background: blue; */
+    display: block;
+    cursor: pointer;
+    height: 100%;
+    margin: 10px auto;
+    width:30px;
+}
+.top-nav-right .top-right-box .box span .fa{
+    color:#fff;
+    font-size: 25px;
+}
+.main-wrapper{
+    background: #22242A;
+    height: 590px;
+    margin-top: 2px;
+}
+.side-menu-master{
+    height: 605px;
+    overflow: hidden;
+}
+.side-menu{
+    background: #2C3034;
+    float: left;
+    height: 605px;
+    overflow-y: scroll;
+    padding-right: 20px;
+    position: fixed;
+    left: 0;
+    top: 52;
+    width: 250px;
+}
+.notification-dropdown{
+    background: #F8F9FA;
+    border-radius: 5px;
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    width: 300px;
+}
+.notification-dropdown.active{
+    display: block;
+}
+.notification-dropdown .inner{
+    background: #F8F9FA;
+    border-radius: 5px;
+    height: 30px;
+    /* padding: 10px 0px; */
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 300px;
+    z-index: 999;
+}
+.notification-dropdown .inner .head{
+    background: #F8F9FA;
+    color: #2C3034;
+    height: 30px;
+    padding: 5px 20px;
+    width: 100%;
+}
+.notification-dropdown .inner .head:hover{
+    background: #e2e2e2;
+}
+.notification-dropdown .inner .head a{
+    color: #212529;
+    text-decoration: none;
+}
+.notification-dropdown .inner .head a:hover{
+    text-decoration: none;
+}
+.notification-dropdown .inner .tip{
+    background: #F8F9FA;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    transform: rotate(45deg);
+    width: 20px;
+}
+.user-dropdown{
+    background: #F8F9FA;
+    border-radius: 5px;
+    display: none;
+    height: 110px;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    width: 300px;
+}
+.user-dropdown.active{
+    display: block;
+}
+.user-dropdown .inner{
+    background: #f8f9fA;
+    border-radius: 5px;
+    height: 110px;
+    padding: 10px 0px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 300px;
+    z-index: 999;
+}
+.user-dropdown .inner .head{
+    background: #F8F9FA;
+    color: #2C3034;
+    height: 30px;
+    padding: 5px 20px;
+    width: 100%;
+}
+.user-dropdown .inner .head:hover{
+    background: #e2e2e2;
+}
+.user-dropdown .inner .head a{
+    color: #212529;
+    text-decoration: none;
+}
+.user-dropdown .inner .head a:hover{
+    text-decoration: none;
+}
+.user-dropdown .inner .tip{
+    background: #F8F9FA;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    transform: rotate(45deg);
+    width: 20px;
+}
+
+/* ========== MENU STYLES ========== */
+.dropdown-box-username{
+    /* background:green; */
+    border-bottom: 1px solid #B9BABF;
+    color:#B9BABF;
+    height: 40px;
+    transition: .5s;
+}
+.dropdown-box-username-active{
+    height: 80px;
+}
+.dropdown-box-username .username{
+    cursor: pointer;
+    height: 40px;
+    padding: 10px;
+}
+.dropdown-box-username .username .left{
+    float: left;
+    height: 40px;
+    width: 87%;
+}
+.dropdown-box-username .username .right{
+    float: right;
+    height: 40px;
+    width: 5%;
+}
+.dropdown-box-username .username .right:after{
+    content: '';
+    clear: both;
+}
+.dropdown-box-username .dropdown{
+    display: none;
+    height: 40px;
+    padding: 10px;
+    transition: .5s;
+}
+.dropdown-box-username .dropdown-active{
+    display: block;
+}
+.dropdown-box-username .dropdown a{
+    color:#B9BABF;    
+}
+.dropdown-box-username .dropdown a:hover{
+    text-decoration: none;
+}
+
+.navigator{
+    /* background: green; */
+    height: 50px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.navigator:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius:5px;
+}
+.navigator.active{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius:5px;
+}
+.navigator:hover .icon span .fa{
+    color: #B9BABF;
+}
+.navigator:hover .navigator-text span{
+    color: #B9BABF;
+    font-weight: bold;
+}
+.navigator .icon{
+    /* background: blue; */
+    height: 100%;
+    padding: 0px;
+}
+.navigator div span{
+    /* background: peru; */
+    display: block;
+    height:30px;
+    margin: 5px auto;
+    width: 95%;
+}
+.navigator div span .fa{
+    color:#8D9498;
+    font-size: 25px;
+    margin: 8px;
+}
+.navigator-text{
+    /* background: red; */
+    height: 40px;
+    padding: 0px;
+}
+.navigator-text span{
+    /* background:peru; */
+    color:#8D9498;
+    display: block;
+    /* font-size: 15px; */
+    height:30px;
+    line-height: 40px;
+    margin: 5px auto;
+    width: 120px;
+}
+.course-btn{
+    /* background: red; */
+    cursor: pointer;
+    height: 40px;
+    padding: 0px;
+}
+.dropdown-course{
+    display: none;
+    transition: .5s;
+}
+.dropdown-course.active{
+    display: block;
+}
+.navigator-text span ul{
+    /* background:peru; */
+    color:#8D9498;
+    /* height:30px; */
+    line-height: 40px;
+    margin: 5px auto;
+    width: 200px;
+}
+
+.main-body{
+    /* background: #07288b;
+    color: red; */
+    margin: 20px;
+    margin-top: 30px;
+    padding: 0px;
+}
+.main-body .title{
+    color:#F8F9FA;
+}
+.main-body .title-2{
+    color:#F8F9FA;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+/* ========== Dashboard ========== */
+.dashboard-nav{
+    background: #2C3034;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 30px;
+    padding: 0px;
+    width: 100%;
+}
+.nav-btn{
+    /* background: red; */
+    /* font-size: 18px; */
+    font-weight: bold;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.nav-btn a{
+    color:#FFF;
+}
+.nav-btn a span{
+    margin-right: 5px;
+}
+
+.dashboard-main-body{
+    /* background: blue; */
+    margin-top: 30px;
+}
+.dashboard-main-row2{
+    margin-top: 30px;
+}
+.dashboard-box1{
+    /* background:green; */
+    padding-left: 0px;
+}
+.dashboard-box4{
+    /* background:green; */
+    padding-right: 0px;
+}
+.dashboard-box-inner1{
+    background: #2C3034;
+    border-radius:5px;
+    height: 80px;
+}
+.dashboard-box-inner1 .icon-box{
+    align-items: center;
+    /* background: red; */
+    display:flex;
+    height: 80px;
+    justify-content:center;
+}
+.dashboard-box-inner1 .icon-box span{
+    color:peru;
+    font-size: 30px;
+}
+.dashboard-box-inner1 .parent-text-box{
+    align-items: center;
+    /* background: peru; */
+    display: flex;
+    height: 80px;
+}
+.dashboard-box-inner1 .text-box{
+    /* background: red; */
+    height: 50px;
+    width: 100%;
+}
+.dashboard-box-inner1 .text-box .top{
+    /* background: brown; */
+    color:#8B92A9;
+    font-size:14px;
+    height: 25px;
+    width: 100%;
+}
+.dashboard-box-inner1 .text-box .down{
+    /* background: yellow; */
+    color:#F8F9FA;
+    font-size: 18px;
+    height: 25px;
+    width: 100%;
+}
+.marquee{
+    background:#fff;
+    border-radius:5px;
+    margin-top: 30px;
+}
+.coingecko{
+    /* background:red; */
+    height:400px;
+    margin-top:30px;
+}
+.coingecko .left{
+    /* background:brown; */
+    padding-left:0px;
+}
+.coingecko .left .box{
+    background:#fff;
+    height:400px;
+}
+.coingecko .right{
+    /* background:yellow; */
+    padding-right:0px;
+}
+.coingecko .right .box{
+    background:#fff;
+    height:400px;
+}
+
+/* ==================== Deposit Style =================== */
+a.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px 15px;
+}
+.popup-deposit-wrapper{
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.popup-deposit-wrapper.active{
+    display: block;
+}
+.popup-deposit-wrapper .main-box{
+    background: #22242A;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.popup-deposit-wrapper .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.popup-deposit-wrapper .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.popup-deposit-wrapper .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 200px;
+}
+.popup-deposit-wrapper .main-box .bottom form select{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 40px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 5px;
+    width: 90%;
+}
+.popup-deposit-wrapper .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 40px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 5px;
+    width: 90%;
+}
+.popup-deposit-wrapper .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+/* ==================== Payment Style ==================== */
+.wallet-box{
+    /* background: #2C3; */
+    height: auto;
+}
+.wallet-box-inner{
+    background: #2C3034;
+    height: auto;
+    padding: 15px;
+    width:95%;
+    
+}
+.wallet-box .inner{
+    /* background: purple; */
+    height: auto;
+    width: 100%;
+}
+.wallet-box .inner .head{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.wallet-box .inner .head-2{
+    align-items: center;
+    /* background: green; */
+    color:#A9AFBB;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.wallet-box .inner .head-3{
+    align-items: center;
+    /* background: red; */
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.wallet-box .inner .head-4{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    /* height: 55px; */
+    /* padding-bottom: 10px; */
+    /* padding-top: 10px; */
+    width: 100%;
+}
+.wallet-box .inner .head h4{
+    color: #F8F9FA;
+    font-weight: bolder;
+}
+textarea.wallet-address{
+    background: #22242A;
+    border: none;
+    border: 1px solid #22242A;
+    color: #F8F9FA;
+    font-size: 18px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 2px;
+    outline: none;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    word-break: break-word;
+}
+.currency-converter{
+    /* background: red; */
+    height: 110px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 340px;
+}
+.payment-form{
+    background: #22242A;
+    height: 150px;
+    width: 340px;
+}
+.payment-form select{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width:100%;
+}
+
+.payment-form input[type="file"]{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    color: #F8F9FA;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width:100%;
+}
+.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+/* ==================== Invest Style ==================== */
+.invest .wallet-box{
+    /* background: #2C3; */
+    height: 380px;
+}
+.invest .wallet-box-inner{
+    background: #2C3034;
+    height: 380px;
+    padding: 15px;
+    width:95%;
+}
+.invest .wallet-box .inner{
+    /* background: purple; */
+    height: 200px;
+    width: 100%;
+}
+.invest .wallet-box .inner .head{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+.invest .invest-p{
+    color: #B9BABF;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.invest .invest-invest{
+    color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.invest .invest-form input[type="text"]{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    border-radius: 3px;
+    color: #F8F9FA;
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    width:90%;
+}
+.invest .invest-form input[type="number"]{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    border-radius: 3px;
+    color: #F8F9FA;
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    width:90%;
+}
+.invest .invest-form .deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    display: block;
+    font-size:14px;
+    margin: 20px auto;
+    padding: 15px 10px;
+    width:90%;
+}
+/* ===== Invest Popup Style (for notification message) ===== */
+.invest-popup-notification{
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.invest-popup-notification.active{
+    display: none;
+}
+.invest-popup-notification .main-box{
+    background: #22242A;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.invest-popup-notification .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.invest-popup-notification .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.invest-popup-notification .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: auto;
+    padding: 30px 20px;
+}
+.invest-popup-notification .main-box .bottom .msg{
+    background: #22242A;
+    color:#F8F9FA;
+    height: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.invest-popup-notification .main-box .bottom .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+.invest-popup-notification .main-box form .text{
+    color: #F8F9FA;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 100%;
+}
+
+/* ==================== Approve Deposit Style ==================== */
+.approve{
+    background: #22242A;
+    margin-top: 50px;
+}
+.approve .wallet-box{
+    /* background: #2C3; */
+    margin-top: 30px;
+    height: 380px;
+}
+.approve .wallet-box-inner{
+    background: #2C3034;
+    height: 380px;
+    padding: 15px;
+    width:95%;
+    
+}
+.approve .wallet-box .inner{
+    /* background: purple; */
+    height: 200px;
+    width: 100%;
+}
+.approve .wallet-box .inner .head{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+.approve .invest-p{
+    color: #B9BABF;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.approve .invest-invest{
+    color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.approve .invest-form input[type="number"]{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    border-radius: 3px;
+    color: #F8F9FA;
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    width:90%;
+}
+.approve .invest-form .deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    display: block;
+    font-size:14px;
+    margin: 20px auto;
+    padding: 15px 10px;
+    width:90%;
+}
+/* ==================== Transaction Style ==================== */
+.transaction{
+    background: #2C3034;
+    border-radius: 5px;
+    color:#F8F9FA;
+    min-height: 200px;
+}
+.transaction .top{
+    background: #22242A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:#F8F9FA;
+    min-height: 50px;
+}
+.transaction .top .row .box{
+    align-items: center;
+    background: #22242A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:#F8F9FA;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    min-height: 50px;
+}
+.transaction .top .row .box.active{
+    background: #f8f9fA;
+    color: #2C3034;
+}
+.transaction .top .row .box:hover{
+    border:1px solid #F8F9FA
+}
+.transaction .bottom{
+    background: #2C3034;
+    margin: 30px;
+    min-height: 150px;
+}
+
+.transaction .bottom .con{
+    background: #2C3034;
+    display: none;
+    min-height: 150px;
+}
+.transaction .bottom .con.active{
+    display: block;
+}
+/* ==================== Refer Users Style ==================== */
+.refer-one{
+    background: #2C3034;
+    color: #FFF;
+    height: 200px;
+    padding:10px;
+}
+.refer-one .head{
+    background: #2C3034;
+    color: #FFF;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+}
+.refer-one .head-2{
+    background: #2C3034;
+    color: #008000;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+}
+.refer-one .head-3{
+    background: #2C3034;
+    height: 150px;
+    /* padding-bottom: 30px; */
+    padding-top: 30px;
+}
+.refer-one .head-3 .head{
+    background: #2C3034;
+    height: 20px;
+}
+.refer-one .head-3 .body{
+    align-items: center;
+    background: #2C3034;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+.refer-one .head-3 .body .fa{
+    font-size: 35px;
+}
+.refer-two{
+    background: #2C3034;
+    color: #FFF;
+    margin-top: 30px;
+    min-height: 150px;
+    padding:10px;
+}
+/* ==================== Support Style ==================== */
+.support{
+    background: #2C3034;
+    color: #FFF;
+    min-height: 100px;
+    padding:10px;
+}
+.support .head{
+    background: #2C3034;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 22px;
+    font-weight: bolder;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+.support .head-2{
+    background: #2C3034;
+    color: #FFF;
+    /* font-size: 18px; */
+    height: 40px;
+    margin-top:5px;
+    text-align: center;
+}
+/* ==================== Account Details Style ==================== */
+.bank-transfer{
+    background: #2C3034;
+    height: 450px;
+    width: 100%;
+}
+.bank-transfer .text{
+    color: #F8F9FA;
+    margin-top: 10px;
+    width: 100%;
+}
+.bank-transfer .head{
+    background: #2C3034;
+    border-bottom: 1px solid #F8F9FA;
+    /* height: 60px; */
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    width: 100%;
+}
+.bank-transfer .body{
+    background: #2C3034;
+    height: 360px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    width: 100%;
+}
+.bank-transfer .body input{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.bank-transfer .body input.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+}
+
+.btc{
+    background: #2C3034;
+    height: 250px;
+    margin-top: 30px;
+    width: 100%;
+}
+.btc .text{
+    color: #F8F9FA;
+    margin-top: 10px;
+    width: 100%;
+}
+.btc .head{
+    background: #2C3034;
+    border-bottom: 1px solid #F8F9FA;
+    /* height: 60px; */
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    width: 100%;
+}
+.btc .body{
+    background: #2C3034;
+    height: 200px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    width: 100%;
+}
+.btc .body input{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.btc .body input.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+}
+/* ==================== Withdrawal Style ==================== */
+.withdraw .box{
+    /* background: #0962bb; */
+    height: 380px;
+}
+.withdraw .box .box-inner{
+    background: #2C3034;
+    height: 380px;
+    padding: 15px;
+    width:95%;
+    
+}
+.withdraw .box .box-inner .head{
+    background: #2C3034;
+    color:#F8F9FA;
+    font-size: 20px;
+    padding: 15px 0px;
+    width: 100%;
+}
+.withdraw .box .box-inner .body{
+    background: #2C3034;
+    color:#F8F9FA;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px 0px;
+    width: 100%;
+}
+.withdraw .box .box-inner .body .right{
+    text-align: right;
+}
+.withdraw .box .box-inner .btn{
+    /* background: red; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.withdraw-popup{
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.withdraw-popup.active{
+    display: block;
+}
+.withdraw-popup .main-box{
+    background: #22242A;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.withdraw-popup .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.withdraw-popup .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.withdraw-popup .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 150px;
+}
+.withdraw-popup .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 50px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px 10px;
+    width: 90%;
+}
+.withdraw-popup .main-box .bottom form textarea{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 150px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px 10px;
+    width: 90%;
+}
+.withdraw-popup .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+/* ==================== Profile Style ==================== */
+.profile .box{
+    background: #22242A;
+    height: 480px;
+}
+.profile .box .box-inner{
+    background: #2C3034;
+    height: 450px;
+    padding: 15px;
+    padding-top: 50px;
+    width:95%;
+    
+}
+.profile .box .box-inner .img{
+    background: #2C3034;
+    border-radius: 50%;
+    height: 230px;
+}
+.profile .box .box-inner .name{
+    align-items: center;
+    background: #2C3034;
+    color:#8B92A9;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+.profile .box .box-inner a.btn{
+    background: #09f329;
+    color: #F8F9FA;
+    display: block;
+    height: 40px;
+    line-height: 28px;
+    margin:10px auto;
+    text-align: center;
+    width: 120px;
+}
+.profile .box .box-inner-2{
+    background: #2C3034;
+    height: 300px;
+    padding: 50px;
+    padding-top: 50px;
+    width:100%;
+}
+.profile .box .box-inner-2 span{
+    margin-right: 5px;    
+}
+.profile .box .box-inner-2 .name{
+    background: #2C3034;
+    color: #8D9498;
+    font-size: 25px;
+    height: 40px;
+    
+}
+.profile .box .box-inner-2 .body{
+    background: #2C3034;
+    color: #8D9498;
+    font-size: 18px;
+    height: 30px;
+    
+}
+.profile .box .box-inner-2 .btn-pop{
+    background: #2C3034;
+    color: #8D9498;
+    font-size: 18px;
+    height: 60px;
+    margin-top: 10px;
+    
+}
+.profile .box .box-inner-2 a.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    padding: 15px 15px;
+}
+.profile-popup-picture{
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.profile-popup-picture.active{
+    display: block;
+}
+.profile-popup-picture .main-box{
+    background: #22242A;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.profile-popup-picture .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.profile-popup-picture .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.profile-popup-picture .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 150px;
+}
+.profile-popup-picture .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+}
+.profile-popup-picture .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+.profile-popup-picture .main-box form .text{
+    color: #F8F9FA;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 100%;
+}
+
+.profile-popup-update{
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.profile-popup-update.active{
+    display: block;
+}
+.profile-popup-update .main-box{
+    background: #22242A;
+    height: 620px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.profile-popup-update .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.profile-popup-update .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.profile-popup-update .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 150px;
+}
+.profile-popup-update .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+}
+.profile-popup-update .main-box .bottom form textarea{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px 22px;
+    min-height: 40px;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+}
+.profile-popup-update .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+.profile-popup-update .main-box form .text{
+    color: #F8F9FA;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 100%;
+}
+.password{
+    background: #22242A;
+    min-height: 300px;
+    margin-top: 80px;
+    padding: 40px 200px;
+}
+.password .box{
+    background: #2C3034;
+    height: 400px;
+    padding: 10px 30px;
+}
+.password .box .inner{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    border-radius: 3px;
+    height: 90px;
+    margin-top: 8px;
+    padding: 5px 20px;
+}
+.password .box .inner p.text{
+    color: #f8f9fA;
+}
+.password .box .inner input{
+    background: #22242A;
+    border: 1px solid #f8f9fA;
+    color: #f8f9fA;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+.password .box .inner select{
+    background: #22242A;
+    border: 1px solid #f8f9fA;
+    color: #f8f9fA;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+.password form .submit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 12px;
+    width: 100px;
+}
+/* ==================== Notification ==================== */
+.notification{
+    background: #2C3034;
+    height: auto;
+    margin-top: 50px;
+}
+.client{
+    background: #2C3034;
+    margin-top: 50px;
+    min-height: 100px;
+    padding: 30px;
+}
+.client .client-btn{
+    background: #22242A;
+    border: none;
+    color:#F8F9FA;
+    outline: none;
+    padding:5px;
+    width:70px;
+}
+
+/* ==================== Credit Client Style ==================== */
+.credit{
+    background: #2C3034;
+    height: 351px;
+    width: 100%;
+}
+.credit .text{
+    color: #F8F9FA;
+    margin-top: 10px;
+    width: 100%;
+}
+.credit .head{
+    background: #2C3034;
+    border-bottom: 1px solid #F8F9FA;
+    /* height: 60px; */
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    width: 100%;
+}
+.credit .body{
+    background: #2C3034;
+    height: 280px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    width: 100%;
+}
+.credit .body select{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.credit .body input{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.credit .body input.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+}
+
+/* ==================== Email Client Style ==================== */
+.email{
+    background: #2C3034;
+    height: auto;
+    width: 100%;
+}
+.email .text{
+    color: #F8F9FA;
+    margin-top: 10px;
+    width: 100%;
+}
+.email .head{
+    background: #2C3034;
+    border-bottom: 1px solid #F8F9FA;
+    /* height: 60px; */
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 20px;
+    width: 100%;
+}
+.email .body{
+    background: #2C3034;
+    height: auto;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    width: 100%;
+}
+.email .body select{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.email .body input{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:40px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.email .body textarea{
+    background: #22242A;
+    color: #F8F9FA;
+    border-radius: 3px;
+    height:80px;
+    outline: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.email .body input.deposit-btn{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+    width: 100px;
+}
+
+/* ==================== Add Wallet Address Style ==================== */
+/* ==================== Payment Style ==================== */
+.add-wallet-box{
+    /* background: #2C3; */
+    height: auto;
+}
+.add-wallet-box-inner{
+    background: #2C3034;
+    height: auto;
+    padding: 15px;
+    width:95%;
+    
+}
+.add-wallet-box .inner{
+    /* background: purple; */
+    height: auto;
+    width: 100%;
+}
+.add-wallet-box .inner .head{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.add-wallet-box .inner .head h4{
+    color: #F8F9FA;
+    font-weight: bolder;
+}
+.add-wallet-box .inner .head-2{
+    align-items: center;
+    /* background: green; */
+    color:#A9AFBB;
+    display: flex;
+    height: 25px;
+    width: 100%;
+}
+.add-wallet-box .inner .head-3{
+    align-items: center;
+    /* background: green; */
+    display: flex;
+    height: 55px;
+    width: 100%;
+}
+.add-wallet-box .inner form textarea{
+    background: #22242A;
+    border: 1px solid #F8F9FA;
+    color: #F8F9FA;
+    /* height: 40px; */
+    margin-top: 20px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+.add-wallet-box .inner form input{
+    background: #ffffff;
+    border-color: #fff;
+    border-radius: 3px;
+    color:#000;
+    cursor: pointer;
+    font-size:14px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 15px 15px;
+}
+
+.add-wallet-box .inner div.wallet-address{
+    /* background: red; */
+    color: #F8F9FA;
+    font-size: 18px;
+    height: auto;
+    word-break: break-word;
+}
+
+/* ==================== Course Style ==================== */
+.course .box{
+    /* background: #0962bb; */
+    height: 470px;
+}
+.course .box .box-inner{
+    background: #2C3034;
+    height: 470px;
+    padding: 15px;
+    width:95%;
+    
+}
+.course .box .box-inner .head{
+    background: #2C3034;
+    color:#F8F9FA;
+    font-size: 20px;
+    padding: 15px 0px;
+    width: 100%;
+}
+.course .box .box-inner .body{
+    background: #2C3034;
+    border-radius: 50%;
+    color:#F8F9FA;
+    font-size: 18px;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px 0px;
+    width: 100%;
+}
+.course .box .box-inner .body img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.course .box .box-inner .body .right{
+    text-align: right;
+}
+.course .box .box-inner .btn{
+    /* background: red; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+.course-popup{
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.course-popup.active{
+    display: block;
+}
+.course-popup .main-box{
+    background: #22242A;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.course-popup .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.course-popup .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.course-popup .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 150px;
+}
+.course-popup .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 50px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px 10px;
+    width: 90%;
+}
+.course-popup .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+.withdraw-popup-payment{
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100vw;
+}
+.withdraw-popup-payment.active{
+    display: block;
+}
+.withdraw-popup-payment .main-box{
+    background: #22242A;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.withdraw-popup-payment .main-box .head{
+    background: #22242A;
+    border-bottom: 1px solid #fff;
+    color: #F8F9FA;
+    height: 50px;
+}
+.withdraw-popup-payment .main-box .head .close{
+    color: #F8F9FA;
+    cursor:pointer;
+}
+.withdraw-popup-payment .main-box .bottom{
+    background: #22242A;
+    color: #F8F9FA;
+    height: 150px;
+}
+.withdraw-popup-payment .main-box .bottom form input{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 50px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px 10px;
+    width: 90%;
+}
+.withdraw-popup-payment .main-box .bottom form textarea{
+    background: #22242A;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    height: 150px;
+    margin: 10px 22px;
+    outline: none;
+    padding: 10px 10px;
+    width: 90%;
+}
+.withdraw-popup-payment .main-box .bottom form .btn{
+    background: #F8F9FA;
+    color:#22242A;
+    padding: 12px 15px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== Mobile View ==================== */
+@media (max-width: 760px){
+    .laptop-view{
+        display:none;
+    }
+    .side-menu-master{
+        height: 0px;
+        overflow: hidden;
+    }
+    .side-menu{
+        /* background:red; */
+        height: 100vh;
+        padding: 0px;
+        position: fixed;
+        left:-400px;
+        top:50px;
+        overflow-y:scroll;
+        transition: .5s;
+        width:100vw;
+        z-index:9999;
+    }
+    .side-menu.side-menu-active{
+        left:0px;
+    }
+    .side-menu-wrapper{
+        border-bottom: 1px solid #B9BABF;
+        padding: 15px;
+    }
+    .dropdown-box-username{
+        border-bottom: none;
+    }
+    .side-menu-navigation-mobile{
+        padding: 0px 15px;
+    }
+    .mobile-view{
+        background:#2C3034;
+        display:block;
+        height:50px;
+        /* margin-bottom: 150px; */
+        position: fixed;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        z-index: 999999;
+    }
+    .mobile-view .mobile-menu{
+        align-items:center;
+        background:#2C3034;
+        cursor: pointer;
+        display:flex;
+        height:50px;
+        justify-content:center;
+    }
+    .mobile-view .mobile-menu span{
+        align-items:center;
+        /* background:blue; */
+        display: flex;
+        height:50px;
+        justify-content:center;
+    }
+    .mobile-view .mobile-menu span .fa{
+        color:#fff;
+        font-size:30px;
+    }
+    .mobile-view .mobile-logo{
+        background: #2C3034;
+        text-align:center;
+    }
+    .mobile-view .mobile-logo img{
+        padding:5px;
+        height:50px;
+        line-height:40px;
+        text-align:center;
+    }
+    .mobile-view .mobile-side-btn{
+        background:#2C3034;
+        cursor:pointer;
+        height:50px;
+    }
+    .mobile-view .mobile-side-btn span{
+        align-items:center;
+        /* background:blue; */
+        display: flex;
+        height:50px;
+        justify-content:center;
+    }
+    .mobile-view .mobile-side-btn span .fa{
+        color:#fff;
+        font-size:30px;
+    }
+    .mobile-view-dropdown{
+        background: #2C3034;
+        display:block;
+        height:0px;
+        margin-top: 70px;
+        transition: .5s;
+        z-index: 99999;
+    }
+    .mobile-view-dropdown.active{
+        height:30px;
+    }
+    .mobile-view-dropdown .box{
+        /* background: red; */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-view-dropdown .box span{
+        /* background: blue; */
+        align-items: center;
+        display: flex;
+        height:0px;
+        justify-content: center;
+        transition: 1s;
+    }
+    .mobile-view-dropdown .box span.active{
+        /* background: red; */
+        height:30px;
+    }
+    .mobile-view-dropdown .box span .fa{
+        color:#F8F9FA;
+        display: none;
+        font-size: 15px;
+    }
+    .mobile-view-dropdown .box span i.active{
+        display: block;
+    }
+
+    /* =============== Mobile Body Section =============== */
+    .main-body{
+        /* background: #07288b; */
+        margin: -5px;
+    }
+    .dashboard-main-body{
+        /* background: red; */
+        margin-top: 30px;
+    }
+    .dashboard-box1, .dashboard-box2, .dashboard-box3, .dashboard-box4{
+        /* background:green; */
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .dashboard-main-row2{
+        margin-top: 0px;
+    }
+
+    /* CoinGecko Style Section */
+    .coingecko{
+        height:800px;
+        margin-bottom: 10px;
+    }
+    .coingecko .left{
+        padding:0px;
+        margin-bottom:15px;
+    }
+    .coingecko .right{
+        padding:0px;
+        margin-top:15px;
+    }
+
+    footer{
+        /* background: red; */
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    footer div{
+        background: #2C3034;
+        color:#F8F9FA;
+        margin:0px;
+        padding: 10px;
+        text-align: center;
+    }
+}
